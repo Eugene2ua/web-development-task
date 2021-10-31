@@ -1,3 +1,25 @@
-.Header{
-    
+.header{
+    border: black 1px solid;
+    background-color: #031439;
+    background-image: url(./img/headerNavBackground.png);
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60px;
+    }
+
+    .nav{
+        border: #7e0cb1 1px solid;
+        .items div{
+            text-transform: uppercase;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 40px;
+            border: #dc0e0e 1px solid;
+        }
+    }
 }
