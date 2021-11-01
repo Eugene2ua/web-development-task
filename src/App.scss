@@ -17,9 +17,11 @@
 
     .nav{
         //border: #7e0cb1 1px solid;
+        display: flex;
+
         .items{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
 
         .items div{
@@ -31,14 +33,29 @@
             min-height: 40px;
             //border: #dc0e0e 1px solid;
             a{
+                margin: 10px;
                 color: #ffffff;
+                text-decoration: none;
             }
         }
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .App{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+
     .header .nav .items {
-        flex-direction: row;
+        flex-direction: column;
+        div{
+            border-bottom: white 1px solid;
+        }
     }
 }

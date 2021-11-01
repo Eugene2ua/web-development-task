@@ -13,9 +13,12 @@
   align-items: center;
   min-height: 60px;
 }
+.header .nav {
+  display: flex;
+}
 .header .nav .items {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .header .nav .items div {
   text-transform: uppercase;
@@ -26,12 +29,27 @@
   min-height: 40px;
 }
 .header .nav .items div a {
+  margin: 10px;
   color: #ffffff;
+  text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
   .header .nav .items {
-    flex-direction: row;
+    flex-direction: column;
+  }
+  .header .nav .items div {
+    border-bottom: white 1px solid;
   }
 }
 
