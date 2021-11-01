@@ -1,5 +1,10 @@
+.App{
+    display: flex;
+    justify-content: space-between;
+}
+
 .header{
-    border: black 1px solid;
+    //border: black 1px solid;
     background-color: #031439;
     background-image: url(./img/headerNavBackground.png);
 
@@ -11,15 +16,29 @@
     }
 
     .nav{
-        border: #7e0cb1 1px solid;
+        //border: #7e0cb1 1px solid;
+        .items{
+            display: flex;
+            flex-direction: column;
+        }
+
         .items div{
             text-transform: uppercase;
-            color: aliceblue;
+            color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 40px;
-            border: #dc0e0e 1px solid;
+            //border: #dc0e0e 1px solid;
+            a{
+                color: #ffffff;
+            }
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .header .nav .items {
+        flex-direction: row;
     }
 }

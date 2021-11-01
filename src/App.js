@@ -3,29 +3,24 @@ import Logo from './img/Logo'
 
 function App() {
   return (
-    <div className="App container">
       <header className="header">
-          <div className="row logo">
-              <Logo class='col'/>
-          </div>
-          <div className="row nav">
-              <div className='col items'>
-                  <div>features</div>
-                  <div>works</div>
-                  <div>our team</div>
-                  <div>testimonials</div>
-                  <div>download</div>
+        <div className="container">
+              <div className="App row">
+                  <div className="logo col-6">
+                      <Logo/>
+                  </div>
+                  <div className="nav col-6">
+                      <div className='items'>
+                          <div><a href="">features</a></div>
+                          <div><a href="">works</a></div>
+                          <div><a href="">our team</a></div>
+                          <div><a href="">testimonials</a></div>
+                          <div><a href="">download</a></div>
+                      </div>
+                  </div>
               </div>
-          </div>
+        </div>
       </header>
-        {/*<body>*/}
-        {/*<div className="main-content">*/}
-        {/*    <h2>your favorite one page multi purpose template</h2>*/}
-        {/*    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolorum ipsa, molestias mollitia quos tenetur!</h3>*/}
-        {/*    <button>find out more</button>*/}
-        {/*</div>*/}
-        {/*</body>*/}
-    </div>
   );
 }
 

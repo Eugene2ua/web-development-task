@@ -1,5 +1,9 @@
+.App {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header {
-  border: black 1px solid;
   background-color: #031439;
   background-image: url(./img/headerNavBackground.png);
 }
@@ -9,17 +13,26 @@
   align-items: center;
   min-height: 60px;
 }
-.header .nav {
-  border: #7e0cb1 1px solid;
+.header .nav .items {
+  display: flex;
+  flex-direction: column;
 }
 .header .nav .items div {
   text-transform: uppercase;
-  color: aliceblue;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 40px;
-  border: #dc0e0e 1px solid;
+}
+.header .nav .items div a {
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .header .nav .items {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
