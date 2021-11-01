@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   min-height: 60px;
+  margin-left: 20px;
 }
 .header .nav {
   display: flex;
@@ -51,6 +52,27 @@
   .header .nav .items div {
     border-bottom: white 1px solid;
   }
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.main-content h2, .main-content h3 {
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.main-content button {
+  color: white;
+  background-color: red;
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  max-width: 150px;
 }
 
 /*# sourceMappingURL=App.css.map */

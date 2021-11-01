@@ -13,6 +13,7 @@
         justify-content: center;
         align-items: center;
         min-height: 60px;
+        margin-left: 20px;
     }
 
     .nav{
@@ -57,5 +58,32 @@
         div{
             border-bottom: white 1px solid;
         }
+    }
+}
+
+.main-content{
+    //background-color: #031439;
+    //background-image: url(./img/headerNavBackground.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+;
+
+    h2, h3{
+        color: white;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    button{
+        color: white;
+        background-color: red;
+        text-transform: uppercase;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        max-width: 150px;
     }
 }

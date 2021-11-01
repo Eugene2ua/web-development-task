@@ -19,6 +19,11 @@ function App() {
                       </div>
                   </div>
               </div>
+            <div className="main-content row">
+                <h2>Your Favorite One Page Multi Purpose Template</h2>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos explicabo nulla quam quidem tenetur veniam.</h3>
+                <button>find out more</button>
+            </div>
         </div>
       </header>
   );
